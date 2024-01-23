@@ -6,11 +6,18 @@
     <title>third assignment</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <nav>
+<body class="font-manrope">
+    <header class="lg:container lg:max-auto p-10">
+        <nav class="bg-white">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
                   <a class="text-xl">Hockey<span class="text-[#FF4240]">’</span>s</a>
@@ -23,7 +30,7 @@
                     <li><a>Blog</a></li>
                     <li><a>Contact</a></li>
                     <li>
-                        <summary>
+                        <summary class="bg-[#FF4240]">
                             Get Ticket
                         </summary>
                       
@@ -32,12 +39,70 @@
                 </div>
               </div>
         </nav>
-        <h3>
-            Chandro Shakhor
-        </h3>
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+          </div>
     </header>
     <main>
-
+        <section class="p-10">
+            <h2 class="text-center">
+                Professional Hockeys Club
+            </h2>
+            <p class="text-center">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+            </p>
+        </section>
+        <section class="p-12 flex">
+            <div class="items-center">
+                <div>
+                    <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                </div>
+                <div>
+                    <h3>Prayer Facility</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="radial-progress text-primary" style="--value:95;" role="progressbar">95%</div>
+                </div>
+                <div>
+                    <h3>Experienced Coach</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+                </div>
+                <div>
+                    <h3>Senior Player</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="radial-progress text-primary" style="--value:80;" role="progressbar">80%</div>
+                </div>
+                <div>
+                    <h3>Training Ground</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
